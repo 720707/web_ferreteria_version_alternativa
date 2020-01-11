@@ -34,7 +34,8 @@ body{
 	/*Ponemos una imagen como fondo, con size hacemos que ocupe todo el espacio y finalmente con position, centramos la imagen*/
 	background-size: cover;
 	background-position: center;
-  background-color: -webkit-linear*gradient(left,blue 50%,green 50%);
+  background-color: -webkit-linear-gradient(left,blue 50%,green 50%);
+  background-color: -moz-linear-gradient(left,blue 50%,green 50%);
 	font-family: Ubuntu;
 	/*Espacio superior en nuestra pagina entre la barra de navegacion y el primer elemento*/)
  	padding-top: 70px;
