@@ -4,18 +4,26 @@ html{
 }
 
 img{
-	border: 1px solid #ccc;
+	border: 2px solid #ccc;
 	display: block;
   	margin: auto;
 }
 
 img:hover {
-	border: 1px solid #777;
+	border: 3px solid #777;
 }
 
 /*Alinear descripcion del producto al centro*/
 .info_producto{
 	text-align: center;
+	color: white;
+	background-color: #5E6966;
+	border: 2px blue dotted;
+}
+
+.jumbotron{
+	color: red;
+	padding: 5%;
 }
 
 #content{
@@ -30,6 +38,7 @@ img:hover {
 
 body{
 	/*Ponemos una imagen como fondo, con size hacemos que ocupe todo el espacio y finalmente con position, centramos la imagen*/
+	background: url(https://i.pinimg.com/originals/c0/93/d4/c093d4e01e135b0265f6be50fc090c2a.jpg);
 	background-size: cover;
 	background-position: center;
 	font-family: Lato;
@@ -41,6 +50,5 @@ body{
 #boton_comprar{
 	position: absolute;
 	right: 34%;
-
 }
 
