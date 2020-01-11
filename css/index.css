@@ -1,0 +1,47 @@
+#content{
+	
+	/*Separamos el contenido de la parte superior y lo centramos*/
+	padding-top:15%;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+body{
+	/*Ponemos una imagen como fondo, con size hacemos que ocupe todo el espacio y finalmente con position, centramos la imagen*/
+	background: url(https://www.pmgchile.com/wp-content/uploads/2018/08/shutterstock_710141932baja.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	font-family: Roboto+Slab;
+	margin-bottom: 20%;
+}
+
+html{
+	min-height:100%;
+}
+
+h3,h1{
+	color: black;
+}
+
+h1{
+	/*Ppara ponerla letra a blod*/
+	font-weight: 700;
+	font-size: 5em;
+}
+
+hr{
+	width:400px;
+	border-top:1px solid #f8f8f8;
+	border-bottom: 1px solid rgba(0,0,0,0)
+}
+
+#boton-productos{
+	margin-top: 10%;
+	margin-right: 3%;
+
+
+}

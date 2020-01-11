@@ -1,0 +1,70 @@
+<!--
+  Página para iniciar sesión desde un usuario existente
+  Autor: Javier Ramos Marco
+  Fecha: 3-01-2020
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Broca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/formulario.css">
+<!--fuente de text-->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+<!--Fuente de iconos-->
+<script src="https://kit.fontawesome.com/2ec255ffb9.js" crossorigin="anonymous"></script>
+<link rel="apple-touch-icon" href="/docs/4.4/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="mask-icon" href="/docs/4.4/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.4/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.4/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+<!--Firebase-->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<!--Incluir barra de navegación y pie de pagina-->
+<script>
+	$(function(){
+      $("#includedBar").load("barra_navegacion.html"); 
+      $("#includedFooter").load("footer.html");
+    });
+</script>
+
+</head>
+
+<body>
+	<!--Barra de navegación -->  
+	<div id="includedBar"></div>
+	<div class ="container text-center">
+		<!--Formulario para iniciar sesion:
+			param: correo electronico y contraseña-->
+		<form class="form-signin">
+		  	<h1 class="h3 mb-3 font-weight-normal">Iniciar Sesión</h1>
+		  	<label for="inputEmail" class="sr-only">Correo electrónico</label>
+		  	<input type="email" id="inputEmail" class="form-control" placeholder="Correo electrónico" required autofocus>
+		  	<label for="inputPassword" class="sr-only">Contraseña</label>
+		  	<input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required>
+		  	<button id="iniciar_sesion" class="btn btn-lg btn-primary btn-block" type="submit">Iniciar Sesión</button>
+
+		</form>
+		<!--span para mostrar informacion sobre el inicio de sesión-->
+		<span id="infoInicioSesion"> </span>
+	</div>
+
+	<!--Pie de pagina -->  
+	<div id="includedFooter"></div>
+<script type="text/javascript" src="../js/iniciar_sesion.js"></script>
+</body>
+
+</html>

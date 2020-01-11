@@ -1,0 +1,108 @@
+<!--
+  Página con información sobre la empresa
+  Autor: Javier Ramos Marco
+  Fecha: 3-01-2020
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Broca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/info.css">
+<!--fuente de text-->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+<!--Fuente de iconos-->
+<script src="https://kit.fontawesome.com/2ec255ffb9.js" crossorigin="anonymous"></script>
+
+<!--Firebase-->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<!--Incluir barra de navegación y pie de pagina-->
+<script>
+	$(function(){
+      $("#includedBar").load("barra_navegacion.html"); 
+      $("#includedFooter").load("footer.html");
+    });
+</script>
+
+</head>
+
+<body>
+  <!--Barra de navegación -->  
+	<div id="includedBar"></div>
+	<div class ="container">
+		<div class="jumbotron">
+			<h1><i class="fas fa-info"></i> Sobre Nosotros </h1>
+			<p>Todos la información sobre nuestra tienda </p>
+		</div>
+	
+	<!-- START THE FEATURETTES -->
+
+	<hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Quienes somos. <span class="text-muted">La mejor ferreteria de Barcelona</span></h2>
+        <p class="lead">Somos la mejor ferreteria que encontraras en Teruel con todos los productos necesarios para ser un manitas. </p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+       <img class ="producto" src="http://www.labroca.cat/imagenes/foto2.jpg">
+       </div>
+    </div>
+
+	<hr class="featurette-divider">
+
+    <div class="row featurette">
+      <!--Con order-md-2, este elemento aparece en segundo lugar-->
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Donde estamos. <span class="text-muted">Ven a visitarnos</span></h2>
+        <p class="lead">Nos encontramos en Carrer d'Agramunt, 14, 08023 Barcelona.</p>
+        <p><a href="https://www.google.com/maps/place/ferreteria+La+Broca/@41.40959,2.146151,15z/data=!4m5!3m4!1s0x0:0xfa35a8bfedbf1afd!8m2!3d41.40959!4d2.146151">Google Maps</a>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 order-md-1">
+       <img class ="producto" src="../img/ubicacion.PNG">
+       </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Que ofrecemos. <span class="text-muted">Desde Alicates hasta Tornillos</span></h2>
+        <p class="lead">Ofrecemos todos los productos que puedas necesitar para reparar esa gotera que tienes en casa o montarte tu nueva estanteria. <br>En caso de que un producto no se encuentre en la tienda se puede solicitar</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6">
+       <img class ="producto" src="https://www.mundoconstructor.com.ec/wp-content/uploads/2019/05/Imagen-ferro-web.jpg">
+       </div>
+    </div>
+
+     <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Horarios. <span class="text-muted">Si no quieres venir en persona, pidelo en la web</span></h2>
+        <p class="lead">Abierto de Lunes a Sabado. De 10pm a 20pm.
+        	<br>Se aceptan pedidos por internet con una entrega de 1-2 dias</p>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-6 order-md-1">
+       <img class ="producto" src="https://as01.epimg.net/tikitakas/imagenes/2018/10/27/portada/1540657862_423276_1540657897_noticia_normal_recorte1.jpg">
+       </div>
+    </div>
+
+	<!-- /END THE FEATURETTES -->
+  <!--Pie de página -->  
+	<div id="includedFooter"></div>
+<script type="text/javascript" src="../js/comprobar_sesion.js"></script>
+
+</body>	
+
+</html>

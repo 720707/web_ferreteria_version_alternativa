@@ -1,0 +1,49 @@
+<!--
+	Crea una barra de navegación
+	Autor: Javier Ramos Marco
+	Fecha: 3-01-2020
+-->
+
+<!--Barra de navegación-->
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+  <div class="container">
+	  <a class="navbar-brand" href="index.html">La Broca</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	  
+	  <!--Con navbar-collapse se hace que sea desplegable la barra. El id tiene que ser el mismo que el data-taget --->
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.html">Inicio</a>
+	      </li>
+           <!--Menu desplegable-->
+	       <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          		Productos
+        		</a>
+        			<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				        <a class="dropdown-item" href="herramientas_electricas.html">Herramientas Eléctricas</a>
+				        <a class="dropdown-item" href="herramientas_manuales.html">Herramientas Manuales</a>
+				        <a class="dropdown-item" href="iluminacion_bombillas.html">Iluminación y bombillas</a>
+        			</div>
+      	   </li>
+
+	      <li class="nav-item">
+	        <a class="nav-link" href="info.html">Sobre Nosotros</a>
+	      </li>
+	      
+	      <li class="nav-item">
+	        <a class="nav-link" href="empleados.html">Empleados</a>
+	      </li>
+	    </ul>
+	    <!--Parte derecha de la barra de navegacion, los iconos se ponene con la etiqueta i -->
+	     <ul class="nav navbar-nav navbar-right">
+	      <span id="RegistrarBarNav"><li class="nav-item"><a class="nav-link" href="registrar_usuario.html"><i class="fas fa-user-plus"></i> Registrarse</a></li></span>
+	      <span id="IniciarSesionBarNav"><li class="nav-item"><a class="nav-link" href="iniciar_sesion.html"><i class="fas fa-user"></i> Iniciar Sesion</a></li></span>
+    	</ul>
+	  </div>
+    </div>
+</nav>

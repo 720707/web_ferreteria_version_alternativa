@@ -1,0 +1,61 @@
+<!--
+  Página que lista los productos de iluminación y bombillas
+  Autor: Javier Ramos Marco
+  Fecha: 3-01-2020
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Broca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/productos.css">
+<!--fuente de text-->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+<!--Fuente de iconos-->
+<script src="https://kit.fontawesome.com/2ec255ffb9.js" crossorigin="anonymous"></script>
+<!--Firestore-->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<!--Incluir barra de navegación y pie de pagina-->
+<script>
+	$(function(){
+      $("#includedBar").load("barra_navegacion.html"); 
+      $("#includedFooter").load("footer.html");
+    });
+</script>
+</head>
+
+<body>
+
+<!--Barra de navegación -->
+<div id="includedBar"></div>
+<div class ="container">
+	<div class="jumbotron">
+		<h1><i class="fas fa-lightbulb"></i> Iluminación y bombillas </h1>
+		<p>Todo lo que necesitas para iluminar tu vida</p>
+	</div>
+
+  <!--Div donde se colocan las herramientas electricas -->
+  <div class = "iluminacion_bombillas">
+  </div>
+</div>
+<!--Pie de página -->
+<div id="includedFooter"></div>
+<script type="text/javascript" src="../js/iluminacion_bombillas.js"></script>
+
+</body>
+</html>

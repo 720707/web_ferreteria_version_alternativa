@@ -1,0 +1,46 @@
+
+html{
+	height: 100%;
+}
+
+img{
+	border: 1px solid #ccc;
+	display: block;
+  	margin: auto;
+}
+
+img:hover {
+	border: 1px solid #777;
+}
+
+/*Alinear descripcion del producto al centro*/
+.info_producto{
+	text-align: center;
+}
+
+#content{
+	/*Separamos el contenido de la parte superior y lo centramos*/
+	padding-top:20%;
+	text-align: center;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+				 0px 8px 13px rgba(0,0,0,0.1),
+				 0px 18px 23px rgba(0,0,0,0.1);
+
+}
+
+body{
+	/*Ponemos una imagen como fondo, con size hacemos que ocupe todo el espacio y finalmente con position, centramos la imagen*/
+	background-size: cover;
+	background-position: center;
+	font-family: Lato;
+	/*Espacio superior en nuestra pagina entre la barra de navegacion y el primer elemento*/)
+ 	padding-top: 70px;
+ 	margin-bottom: 40%;
+}
+
+#boton_comprar{
+	position: absolute;
+	right: 34%;
+
+}
+

@@ -1,0 +1,66 @@
+<!--
+  Página de inicio
+  Autor: Javier Ramos Marco
+  Fecha: 3-01-2020
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>La Broca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="../bootstrap-4.3.1-dist/css/bootstrap.css">
+<script src="../js/jquery-3.4.1.js"></script>
+<script src="../bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/index.css">
+<!--fuente de text-->
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap" rel="stylesheet">
+<!--Fuente de iconos-->
+<script src="https://kit.fontawesome.com/2ec255ffb9.js" crossorigin="anonymous"></script>
+
+<!--Firebase-->
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<!--Incluir barra de navegación y pie de pagina-->
+<script>
+	$(function(){
+      $("#includedBar").load("barra_navegacion.html"); 
+      $("#includedFooter").load("footer.html");
+    });
+
+</script>
+</head>
+
+<body>
+
+
+<!--Barra de navegación -->  
+<div id="includedBar"></div>
+
+<div class ="container">
+	<!--La página va a estar compuesta por una sola fila que va a ocupar todo y donde se va a colocar la imagen y el texto -->
+	<div class="row">
+		<div class="col-lg-12">
+			<div id="content"> 
+				<h1>La Broca</h1>
+				<h3>Todos los productos que necesitas</h3>
+				<!--Linea de separacion-->
+				<a class="btn btn-primary btn-lg" id="boton-productos" href="herramientas_electricas.html"><i class="fas fa-wrench"></i> Ir a Herramientas Eléctricas</a>
+				<a class="btn btn-primary btn-lg" id="boton-productos" href="herramientas_manuales.html"><i class="fas fa-wrench"></i> Ir a Herramientas Manuales</a>
+				<a class="btn btn-primary btn-lg" id="boton-productos" href="iluminacion_bombillas.html"><i class="fas fa-lightbulb"></i> Ir a Iluminacion y Bombillas</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--Pie de página-->
+<div id="includedFooter"></div>
+<script type="text/javascript" src="../js/comprobar_sesion.js"></script>
+</body>	
+
+</html>
