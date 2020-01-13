@@ -35,7 +35,7 @@
 body{
 	/*Ponemos una imagen como fondo, con size hacemos que ocupe todo el espacio y finalmente con position, centramos la imagen*/
 	background-size: cover;
-  background: -webkit-linear-gradient(-45deg, rgba(178,238,240,1) 0%, rgba(106,244,246,0.8) 50%, 
+  background: -webkit-linear-gradient(-45deg, rgba(178,238,240,1) 0%, rgba(106,244,246,0.8) 50%,
   rgba(24,236,233,0.8) 51%, rgba(87,237,236,0.72) 71%, rgba(178,238,240,0.72) 100%);
 	background-position: center;
 	font-family: Lato;
